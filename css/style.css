@@ -1,0 +1,238 @@
+/** general css file */
+
+:root {
+    /* * colors  */
+    --primary-a: #004883;
+    --primary-b: #2a79cb;
+    --primary-c: #6690bd;
+    --primary-d: #93c5fd;
+    --primary-e: #a4c9ff;
+
+    --secondary-a: #030712;
+    --secondary-b: #00162e;
+    --secondary-c: #0f1d3d;
+    --secondary-d: #00315d;
+    --secondary-e: #2c455b;
+    --secondary-f: #242525;
+
+
+
+}
+
+/* ! general class start */
+
+.font-inter {
+    font-family: "Inter";
+}
+
+.font-playfair {
+    font-family: "Playfair Display";
+}
+
+.font-boo {
+    font-family: "Black Ops One";
+}
+
+.font-bitcont {
+    font-family: "Bitcount Ink";
+}
+
+
+
+/* ? general class end */
+
+
+
+
+
+
+
+
+
+/* ! css edits start */
+
+
+/* 
+! ==================================================
+! ==========for all pages start===================== 
+! ==================================================
+*/
+
+html {
+    scrollbar-width: thin;
+
+    scroll-behavior: smooth;
+}
+
+/* ! navbar start */
+#navMenu {
+    max-height: 0;
+
+    overflow: hidden;
+    transition: max-height 0.55s ease;
+}
+
+#navMenu.open {
+    max-height: 320px;
+}
+
+
+
+/* ? navbar end */
+
+/* ? for all pages end */
+
+/* 
+! ==================================================
+! ============= index page start =================== 
+! ==================================================
+*/
+
+/* ! heder index section start */
+.hero-cover {
+    background-image: url(../assets/imgs/background1.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.hero-theme {
+    background: linear-gradient(0deg, var(--secondary-a) 30%, transparent 100%);
+}
+
+/* ? heder index section end */
+
+/* ? index page end */
+
+/* 
+! ==================================================
+! ============= Home page start ====================
+! ==================================================
+*/
+
+/* ! header home section start */
+.header-home-section {
+    background-image: url(../assets/imgs/background1.png);
+    background-size: cover;
+    background-position: right top;
+
+}
+
+.header-home-section section {
+    background: linear-gradient(transparent 70%, var(--secondary-a));
+}
+
+/* ? header home section end */
+
+/* ! main home section start  */
+.website-title-footer {
+    background: linear-gradient(var(--secondary-a), transparent 70%, var(--secondary-a));
+
+}
+
+/* ? main home section end  */
+
+/* ? home page end */
+
+
+/* 
+! ==================================================
+! ============ category page start =================
+! ==================================================
+*/
+
+/* ! header category section start */
+.header-category-section {
+    background: linear-gradient(80deg, var(--secondary-a), var(--secondary-b), var(--secondary-a));
+
+}
+
+.switch-btn-category-section-right {
+    animation: toRight 0.5s ease-in-out 0.01s normal forwards;
+
+}
+
+@keyframes toRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.switch-btn-category-section-left {
+    animation: toLeft 0.5s ease-in-out normal forwards;
+    
+}
+
+@keyframes toLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+#seriesBtnCategory.active,
+#moviesBtnCategory.active {
+    color: black;
+}
+/* ? header category section end */
+
+/* ! main category section start */
+.category-display-section{
+    background: linear-gradient(80deg, var(--secondary-a), #000f1f, var(--secondary-a), #000f1f, var(--secondary-a));
+}
+
+#categoryCheckList li button.active{
+    background-color: rgba(81, 81, 81, 0.21);
+}
+
+#categoryCheckList li button.active span{
+    color: var(--primary-d);
+}
+
+#categoryCheckList li button.active h6{
+    color: var(--primary-c);
+}
+
+.iconify-me.active{
+    color: var(--primary-b);
+}
+
+#categoryPhoneList{
+    display: none ;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff38 transparent; 
+}
+#categoryPhoneList.open{
+    display: block ;
+}
+
+/* ? main category section end */
+
+/* ? category page end */
+
+/* 
+! ==================================================
+! ============= list page start ===================
+! ==================================================
+*/
+.header-list-section {
+    background: linear-gradient(80deg, var(--secondary-a), var(--secondary-b), var(--secondary-a));
+
+}
+
+
+/* ? list page end */
+
+
+
+
+
+
+/* ? css edits end */
